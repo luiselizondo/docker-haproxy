@@ -14,4 +14,8 @@ then
   echo "	stats uri $HAPROXY_URI" >> /etc/haproxy/haproxy.cfg
 fi
 
+echo "Access haproxy stats at $HAPROXY_URI"
+echo "Username: $HAPROXY_USERNAME"
+echo "Password: $HAPROXY_PASSWORD"
+
 exec service haproxy start
